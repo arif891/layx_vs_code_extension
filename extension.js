@@ -3,7 +3,6 @@ const fs = require('fs/promises');
 
 function activate(context) {
     try {
-        console.log('Congratulations, your extension "layx" is now active!');
 
         let syncDisposable = vscode.commands.registerCommand('extension.syncElement', async () => {
             try {
@@ -28,7 +27,7 @@ function activate(context) {
         });
 
         context.subscriptions.push(syncDisposable);
-        console.info('Extension activated successfully');
+        console.info('LayX extension activated successfully');
     } catch (error) {
         console.error('Failed to activate extension', error);
         throw error;
