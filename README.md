@@ -1,6 +1,6 @@
 # LayX Extension for VS Code
 
-The LayX Extension is a Visual Studio Code tool designed to enhance your workflow with the [LayX framework](https://github.com/arif891/layx), a modern CSS framework for flexible and responsive layouts.
+The LayX Extension is a Visual Studio Code tool designed to enhance your workflow with the [LayX framework](https://layx.xyz), a modern CSS framework for flexible and responsive layouts.
 
 ## Features
 
