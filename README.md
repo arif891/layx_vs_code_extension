@@ -31,29 +31,33 @@ The LayX Extension is a Visual Studio Code tool designed to enhance your workflo
 Consider the following HTML snippet in `index.html`:
 
 ```html
-<div class="test" data-component="demo">
-    Content
-    <p class="tst">Test</p>
-    <div>test</div>
-</div>
+<navbar class="main__navbar" data-component="navbar">
+    <nav class="link-wrapper">
+        <a href="" class="link">Home</a>
+        <a href="" class="link">About</a>
+    </nav>
+</navbar>
 ```
 
 If you have another file `about.html` with the same component:
 
 ```html
-<div class="test" data-component="demo">
-    Old Content
-</div>
+<navbar class="main__navbar" data-component="navbar">
+    <nav class="link-wrapper">
+        <a href="" class="link">Home</a>
+    </nav>
+</navbar>
 ```
 
 Running the sync command will update `about.html` to:
 
 ```html
-<div class="test" data-component="demo">
-    Content
-    <p class="tst">Test</p>
-    <div>test</div>
-</div>
+<navbar class="main__navbar" data-component="navbar">
+    <nav class="link-wrapper">
+        <a href="" class="link">Home</a>
+        <a href="" class="link">About</a>
+    </nav>
+</navbar>
 ```
 
 ## Contributing
