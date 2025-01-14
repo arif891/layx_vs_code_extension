@@ -1,4 +1,4 @@
-# Layx VS Code Extension
+# LayX Extension for VS Code
 
 ## Features
 
