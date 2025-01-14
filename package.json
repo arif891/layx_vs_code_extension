@@ -1,22 +1,17 @@
 {
   "name": "layx",
   "displayName": "LayX Extension for VS Code",
-  "description": "This extension designed to enhance your workflow with the LayX framework, a modern CSS framework for flexible and responsive layouts.",
+  "description": "Enhance your workflow with the LayX framework, a modern CSS framework for flexible and responsive layouts.",
   "version": "0.0.1",
   "publisher": "layx",
-  "keywords": [
-    "layx", "css", "framework"
-  ],
-  "repository": "https://github.com/arif891/layx_vs_code_extension",
+  "repository":  "https://github.com/arif891/layx_vs_code_extension",
   "license": "MIT",
-  "pricing": "Free",
   "engines": {
     "vscode": "^1.96.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
     "commands": [
@@ -24,7 +19,18 @@
         "command": "extension.syncElement",
         "title": "Sync Components"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "LayX Configuration",
+      "properties": {
+        "layx.createBackups": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable or disable the creation of backup files before synchronization."
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",
@@ -38,5 +44,15 @@
     "eslint": "^9.16.0",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
-  }
+  },
+  "keywords": [
+    "layx",
+    "css",
+    "framework",
+    "vscode-extension"
+  ],
+  "bugs": {
+    "url": "https://github.com/arif891/layx_vs_code_extension/issues"
+  },
+  "homepage": "https://github.com/arif891/layx_vs_code_extension#readme"
 }
