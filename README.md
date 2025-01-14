@@ -9,7 +9,7 @@ The LayX Extension is a Visual Studio Code tool designed to enhance your workflo
 - **Progress Indication**: Visual feedback during the synchronization process to keep you informed of the operation's status.
 - **Detailed Logging**: Comprehensive logs to help you monitor actions and troubleshoot issues effectively.
 
-*Stay tuned for upcoming features aimed at further enhancing your development experience with LayX.*
+> *Stay tuned for upcoming features aimed at further enhancing your development experience with LayX.*
 
 ## Requirements
 
