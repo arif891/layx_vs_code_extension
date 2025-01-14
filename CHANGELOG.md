@@ -1,9 +1,6 @@
 # Change Log
 
-All notable changes to the "layx" extension will be documented in this file.
+## Prerelease
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+### Added
+- Initial release with component synchronization, backup creation, progress indication, and detailed logging features.

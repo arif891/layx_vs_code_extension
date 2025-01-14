@@ -26,6 +26,36 @@ The LayX Extension is a Visual Studio Code tool designed to enhance your workflo
 2. **Initiate Sync**: Type "Sync Components" and select the command from the list.
 3. **Automatic Synchronization**: The extension will identify and sync all matching elements across your HTML files.
 
+## Example
+
+Consider the following HTML snippet in `index.html`:
+
+```html
+<div class="test" data-component="demo">
+    Content
+    <p class="tst">Test</p>
+    <div>test</div>
+</div>
+```
+
+If you have another file `about.html` with the same component:
+
+```html
+<div class="test" data-component="demo">
+    Old Content
+</div>
+```
+
+Running the sync command will update `about.html` to:
+
+```html
+<div class="test" data-component="demo">
+    Content
+    <p class="tst">Test</p>
+    <div>test</div>
+</div>
+```
+
 ## Contributing
 
 We welcome contributions to enhance the functionality of this extension. To contribute:
